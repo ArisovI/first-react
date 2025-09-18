@@ -25,7 +25,7 @@ const Form = () => {
   }
 
   function getProducts() {
-    console.log("Productlar alindi");
+    console.log("Productlar alindi ham githubqa kirgizdik");
   }
 
   useEffect(() => {
@@ -34,6 +34,7 @@ const Form = () => {
 
   return (
     <div className="form">
+      Form
       <Input
         setValue={setValue}
         value={value}
