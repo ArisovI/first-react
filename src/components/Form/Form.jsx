@@ -25,7 +25,7 @@ const Form = () => {
   }
 
   function getProducts() {
-    console.log("Productlar alindi ham githubqa kirgizdik");
+    console.log("Productlar alindi ham githubqa kirgizdik !!!");
   }
 
   useEffect(() => {
