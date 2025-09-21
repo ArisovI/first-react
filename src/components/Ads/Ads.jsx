@@ -1,9 +1,11 @@
+import Random from "../Random/Random";
+
 const Ads = () => {
   return (
     <div>
-      Ads
+      <Random />
     </div>
-  )
-}
+  );
+};
 
-export default Ads
+export default Ads;
