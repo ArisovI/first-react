@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 
 const Post = () => {
   const params = useParams();
@@ -16,9 +16,20 @@ const Post = () => {
     getPost();
   }, [params.id]);
 
+  const navigate = useNavigate();
+
+  function goToHome() {
+    navigate(-2, { viewTransition: true });
+  }
+
+  function goToPosts() {
+    navigate(-1, { viewTransition: true });
+  }
+
   return (
     <div>
-      <Link to="/">Back to Home</Link>
+      <button onClick={goToHome}>go to home</button>
+      <button onClick={goToPosts}>go to posts</button>
       <p>{post.title}</p>
     </div>
   );

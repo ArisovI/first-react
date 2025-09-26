@@ -28,4 +28,8 @@ export const router = createBrowserRouter([
       },
     ],
   },
+  {
+    path: '/sultanbek',
+    element: <div>Sultanbek 12345 55555</div>
+  }
 ]);
